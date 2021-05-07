@@ -1,5 +1,5 @@
 public class BubbleSort {
-    public void sortArray(int[] array) {
+    public static int[] sortArray(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (array[j] > array[j + 1]) {
@@ -9,6 +9,7 @@ public class BubbleSort {
             }
             //System.out.println("Change of partition index");
         }
+        return array;
     }
 
     public void printArray(int[] array) {
@@ -18,7 +19,7 @@ public class BubbleSort {
         System.out.println();
     }
 
-    public void swap(int[] array, int a, int b) {
+    public static void swap(int[] array, int a, int b) {
         int value = array[b];
         array[b] = array[a];
         array[a] = value;

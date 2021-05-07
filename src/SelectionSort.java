@@ -1,5 +1,5 @@
 public class SelectionSort {
-    void sort(int arr[])
+    public int[] sort(int[] arr)
     {
         int n = arr.length;
         // One by one move boundary of unsorted subarray
@@ -17,6 +17,7 @@ public class SelectionSort {
             arr[min_idx] = arr[i];
             arr[i] = temp;
         }
+        return arr;
     }
     void printArray(int arr[])
     {
